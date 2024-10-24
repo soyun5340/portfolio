@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>portfolio</title>
+	<!-- favicon -->
+    <link rel="icon" href="images/portfolio_favicon.png" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -32,7 +34,7 @@
 
 	<div class="fh5co-loader"></div>
 	<!-- banner -->
-	<div id="page">
+	<div id="page" style="top: -10px">
 		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
 			style="background-image:url(images/bg.jpg);" data-stellar-background-ratio="0.5">
 			<div class="deco_wrap">
@@ -123,7 +125,7 @@
 				<div class="row">
 					<div class="brand_title">친환경 간편식 브랜드 '또바기' 입니다</div>
 					<div class="col-md-6 text-center col-padding animate-box">
-						<a href="#" target="_blank">
+						<a href="bibx_guide/guide.html" target="_blank">
 							<div href="#" class="work" style="background-image: url(images/bibx.jpg);"></div>
 							<div class="work work_text">
 								<div class="desc">
@@ -136,7 +138,7 @@
 						<div class="circle_deco">
 							<img src="images/circle_deco.png" alt="circle_deco">
 						</div>
-						<a href="#" target="_blank">
+						<a href="uiux_guide/guide.html" target="_blank">
 							<div href="#" class="work" style="background-image: url(images/uiux.jpg);"></div>
 							<div class="work work_text">
 								<div class="desc">
@@ -146,7 +148,7 @@
 						</a>
 					</div>
 					<div class="col-md-6 text-center col-padding animate-box">
-						<a href="#" target="_blank">
+						<a href="https://soyun5340.github.io/tobagi/" target="_blank">
 							<div href="#" class="work" style="background-image: url(images/web.jpg);"></div>
 							<div class="work work_text">
 								<div class="desc">
@@ -156,7 +158,7 @@
 						</a>
 					</div>
 					<div class="col-md-6 text-center col-padding animate-box">
-						<a href="#" target="_blank">
+						<a href="ebook/samples/e_book/index.html" target="_blank">
 							<div href="#" class="work" style="background-image: url(images/ebook3.jpg);"></div>
 							<div class="work work_text">
 								<div class="desc">
@@ -237,44 +239,50 @@
 			<div class="brand_title2">제주 함덕 명소들을 캐릭터화한 디자인입니다</div>
 			<div class="slider_wrap">
 				<section class="regular1 slider" dir="ltr">
-					<div class="photo">
-						<img src="images/caractor1.jpg">
+					<div class="photo popup_open">
+						<a href="#"><img src="images/caractor1.jpg"></a>
+						<!-- 팝업 -->
+						<div class="inner_popup">
+							<div>
+								<button class="popup_close">닫기X</button>
+							</div>
+						</div>
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/badge.jpg">
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/caractor2.jpg">
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/apron.jpg">
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/caractor3.jpg">
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/keyring2.jpg">
 					</div>
 				</section>
 			</div>
 			<div class="slider_wrap">
 				<section class="regular2 slider" dir="rtl">
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/sign.jpg">
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/caractor6.jpg">
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/pouch.jpg">
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/caractor5.jpg">
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/t-shirt.jpg">
 					</div>
-					<div class="photo">
+					<div class="photo popup_open">
 						<img src="images/caractor4.jpg">
 					</div>
 				</section>
@@ -455,6 +463,11 @@
 			});
 		});
 	</script>
+	
+	<!-- jQ오픈소스 -->
+	<!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+	<!-- 제어코드 -->
+	<script src="js/script.js"></script>
 </body>
 
 </html>

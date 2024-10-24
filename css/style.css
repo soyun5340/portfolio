@@ -111,9 +111,9 @@ figure {
   background-size: cover;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
-  background-position: center !important;
+  /* background-position: center !important; */
   position: relative;
-  height: 1058px !important;
+  /* height: 1058px !important; */
   width: 100%;
 }
 
@@ -230,7 +230,7 @@ figure {
   bottom: -1028px;
   left: -272px;
   z-index: 9999;
-  animation: flower2 1.54s infinite linear;
+  animation: flower2 1.7s infinite linear;
 }
 /* animation */
 @keyframes star{
@@ -305,11 +305,6 @@ figure {
     position: absolute;
     bottom: -908px;
     left: -123px;
-  }
-  75%{
-    position: absolute;
-    bottom: -912px;
-    left: -160px;
   }
   100%{
     position: absolute;
@@ -1816,3 +1811,80 @@ input[type="text"] {
 .brand_title2{
   color: #3B3B3B;
 }
+@media (min-width:1797px){
+  .fh5co-cover{
+    background-position: center center !important;
+    height: 1058px !important;
+    background-size: 1920px !important;
+  }
+}
+@media (max-width:1796px){
+  .fh5co-cover{
+    height: 890px !important;
+    background-position: center -60px !important;
+    background-size: 2044px !important;
+  }
+  .deco_wrap{
+    width: 1263px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .star{
+    position: absolute;
+    top: 133px;
+    left: -249px;
+    z-index: 9999;
+    animation: star 3s infinite linear;
+  }  
+  /* gr_flower */
+  .gr_flower{
+  position: absolute;
+  top: 85px;
+  right: -31px;
+  z-index: 9999;
+  animation: circle 8s infinite linear;
+  }
+
+}
+/* popup */
+/* 
+#popup{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2); 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.inner_popup{
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+#popup p{
+  border-bottom: 1px dashed #999;
+  padding-top: 30px;
+}
+.popup_close{
+  border: none;
+  background-color: yellowgreen;
+  display: block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.popup_close:hover{
+  background-color: #5f801d;
+  color: #fff;
+}
+.inner_popup div{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+} */
