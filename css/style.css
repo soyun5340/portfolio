@@ -542,6 +542,9 @@ figure {
 .photo {
   width: 100%;
 }
+/* .photo img:hover {
+  background-color: rgba(0,0,0,0.7);
+} */
 
 .info {
   margin: 0;
@@ -1846,45 +1849,91 @@ input[type="text"] {
   }
 
 }
+.photo a img:hover{
+  background-color: rgba(0,0,0,0.5);
+}
 /* popup */
-/* 
-#popup{
+#popup,#popup2,#popup3,#popup4,#popup5,#popup6{
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.2); 
-  display: flex; 
+  z-index: 999;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .inner_popup{
-  width: 500px;
-  height: 400px;
-  background-color: #fff;
-  padding: 30px;
+  display: inline-block;
+  width: 673px;
+  height: 740px;
+  background-color: #313131;
+  border-radius: 64px;
+  padding: 70px;
   box-sizing: border-box;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  color: #fff;
 }
-#popup p{
-  border-bottom: 1px dashed #999;
-  padding-top: 30px;
+.popup_pd{
+  padding: 50px !important;
+}
+.slider_wrap h2{
+  color: #fff;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.slider_wrap p{
+  font-size: 16px;
+  line-height: 1.5em;
 }
 .popup_close{
   border: none;
-  background-color: yellowgreen;
+  background-color: inherit;
   display: block;
-  padding: 10px 20px;
-  font-size: 20px;
   cursor: pointer;
+  width: 96px;
 }
-.popup_close:hover{
-  background-color: #5f801d;
-  color: #fff;
+.popup_close img{
+  margin: 0 0 30px 294px;
+  display: block;
+  width: 100%;
 }
 .inner_popup div{
   display: flex;
-  justify-content: flex-end;
-  padding-top: 30px;
-} */
+  justify-content: center;
+}
+.inner_popup img{
+  width: 100%;
+}
+@media (max-width:800px){
+  .inner_popup{
+    width: 83%;
+    height: auto;
+    padding: 30px;
+  }
+  .popup_close{
+    width: 60px;
+  }
+  .popup_close img{
+    margin: 93px 0 30px 280px;
+  }
+}
+@media (max-width:637px){
+  .inner_popup{
+    width: 90%;
+  }
+  .popup_close img{
+    margin: 0px 0 20px 0px;
+  }
+}
+@media (max-width:425px){
+  .slider_wrap h2{
+    font-size: 20px;
+  }
+  .slider_wrap p{
+    font-size: 13px;
+  }
+}
